@@ -1038,7 +1038,7 @@ header div.navbar-right {
 
 /* line 9, ../../sass/partials/_breadcrumbs.scss */
 .breadcrumb li, .breadcrumb li a {
-  color: #675949;
+  /* color: #675949; */
   background-color: inherit;
   font-style: normal;
   font-weight: normal;
@@ -1773,7 +1773,7 @@ code {
 .item-title {
   text-transform: uppercase;
   font-size: .9rem;
-  margin: 0;
+  margin: 0 0 5px 0;
   color: #675949;
   font-weight: 500;
 }
@@ -1792,4 +1792,28 @@ code {
 nav.navbar[_ngcontent-c7] {
     border-bottom: 1px #ced4da solid;
     align-items: baseline;
+}
+.sidebar-item {
+  margin:20px 0;
+  background-color: #F6F5F4;
+  padding: 10px
+}
+.panel-title, .panel-body article {
+  padding: 10px;
+}
+.description_long {
+  margin: 10px 0;
+  max-width: 48rem;
+}
+.collections-list {
+  border-top: 3px solid #ced4da;
+  margin-top: 20px;
+}
+.breadcrumb{
+  font-size: 14px;
+  color: #6c7175
+}
+.breadcrumb a{
+  font-size: 14px;
+  color: #6c7175
 }
