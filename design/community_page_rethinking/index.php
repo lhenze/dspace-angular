@@ -263,139 +263,17 @@
           </div>
           <div class="col-md-3">
             <div class="sidebar" id="sidebar">
-              <div class="sidebar-item-search">
-                <div class="input-group" style="margin-top:20px; max-width: 500px">
-                  <input type="text" class="form-control" placeholder="Search this community">
-                  <div class="input-group-append">
-                    <button class="btn btn-secondary" type="button">
-                      <i class="fas fa-search fa-lg fa-fw"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <div class="sidebar-header">
-                  <h3 class="item-title">Downloadable EBooks</h3>
-                </div>
-                <p>This is the optional "News" section. It provides a space for arbitrary HTML for both the title of this section and its content. <a href="#" style="white-space: nowrap;">This&nbsp;is a link.</a></p>
-              </div>
-              <div class="sidebar-item">
-                <h3 class="item-title">Browse all items</h3>
-                <div class="list-group">
-                  <a class="list-group-item" href="/browse/title?scope=fa49e785-f9af-4a88-8f55-6345aa42c4d1">By Title</a>
-                  <a class="list-group-item" href="/browse/dateissued?scope=fa49e785-f9af-4a88-8f55-6345aa42c4d1">By Issue Date</a>
-                  <a class="list-group-item" href="/browse/author?scope=fa49e785-f9af-4a88-8f55-6345aa42c4d1">By Author</a>
-                  <a class="list-group-item" href="/browse/subject?scope=fa49e785-f9af-4a88-8f55-6345aa42c4d1">By Subject</a>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <div class="most-downloaded">
-                  <h3 class="item-title">Featured</h2>
-                    <div class="x">
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">East Asian Collection</a></div>
-                        <h3 class="article-title"><a href="#">The Essence of the Novel</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Gottlieb, Nanette</a>
-                        </div>
-                        <div class="authors">
-                          <a class="authors" href="#"> Tsubouchi, Shoyo</a>
-                        </div>
-                        <div class="authors">
-                          <a class="authors" href="#"> Lawson, Dawn</a>
-                        </div>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Art/Science Collisions Collection</a></div>
-                        <h3 class="article-title"><a href="#">Example exoplanet research concept map</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Gano, Gretchen</a>
-                        </div>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">Yanks are not coming</a></h3>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">New_Masses_1937_JUL_27_cover.jpg</a></h3>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">"John Strachey, Radicals in Rompers"</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Johnson, Crockett</a>
-                        </div>
-                      </article>
-                    </div>
-                </div>
-              </div>
-              <div class="sidebar-item">
-                <div class="most-downloaded">
-                  <h3 class="item-title">Most downloaded</h2>
-                    <div class="x">
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">East Asian Collection</a></div>
-                        <h3 class="article-title"><a href="#">The Essence of the Novel</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Gottlieb, Nanette</a>
-                        </div>
-                        <div class="authors">
-                          <a class="authors" href="#"> Tsubouchi, Shoyo</a>
-                        </div>
-                        <div class="authors">
-                          <a class="authors" href="#"> Lawson, Dawn</a>
-                        </div>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Art/Science Collisions Collection</a></div>
-                        <h3 class="article-title"><a href="#">Example exoplanet research concept map</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Gano, Gretchen</a>
-                        </div>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">Yanks are not coming</a></h3>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">New_Masses_1937_JUL_27_cover.jpg</a></h3>
-                      </article>
-                      <article>
-                        <div class="communityflag"><span>Collection:</span>
-                          <a href="#">Tamiment Library Serials</a></div>
-                        <h3 class="article-title"><a href="#">"John Strachey, Radicals in Rompers"</a></h3>
-                        <div class="authors">
-                          <a class="authors" href="#"> Johnson, Crockett</a>
-                        </div>
-                      </article>
-                    </div>
-                </div>
-              </div>
+              <?php include 'includes/sidebar_search.php';  ?>
+              <?php include 'includes/sidebar_news.php';  ?>
+              <?php include 'includes/sidebar_browse.php';  ?>
+              <?php include 'includes/sidebar_featured.php';  ?>
+              <?php include 'includes/sidebar_downloaded.php';  ?>
             </div>
           </div>
         </div>
     </main>
-    <footer class="navbar navbar-inverse">
-      <div class="footer-holder container">
-        <div class="f-1"><a href="#">About the Archive</a> | <a target="_blank" href="#">Help</a> | <a href="#">Contact</a> | <a href="#">Rights</a> | <a href="#" class="ext" target="_blank">Accessibility <span class="glyphicon glyphicon-new-window"></span></a></div>
-        <div class="f-2">
-          <p _ngcontent-c5="">
-            <a _ngcontent-c5="" href="http://www.dspace.org/">DSpace software</a> copyright © 2002-2019 <a _ngcontent-c5="" href="http://www.duraspace.org/">DuraSpace</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    <?php include 'includes/footer.php';  ?>
+
   </body>
 
 </html>
