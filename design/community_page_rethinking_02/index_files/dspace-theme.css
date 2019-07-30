@@ -1853,5 +1853,6 @@ nav.navbar[_ngcontent-c7] {
 }
 /* homepage */
 .list-section-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  text-transform: uppercase;
 }
