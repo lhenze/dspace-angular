@@ -3,10 +3,10 @@
     <div *ngIf="communityRD?.payload; let communityPayload">
       <!-- Community name -->
       <ds-comcol-page-header [name]="communityPayload.name"></ds-comcol-page-header>
-      <!-- Browse-By Links -->
+      
       <div class="row">
         <div class="col-12 col-md-9">
-          <ds-comcol-page-browse-by [id]="communityPayload.id"></ds-comcol-page-browse-by>
+        
           <!-- Community logo -->
           <ds-comcol-page-logo *ngIf="logoRD$" [logo]="(logoRD$ | async)?.payload" [alternateText]="'Community Logo'">
           </ds-comcol-page-logo>
@@ -19,11 +19,26 @@
           <ds-community-page-sub-community-list [community]="communityPayload"></ds-community-page-sub-community-list>
           <ds-community-page-sub-collection-list [community]="communityPayload"></ds-community-page-sub-collection-list>
         </div>
-        <div class="col-3 " style="border-left: 1px solid #ccc;">
+        <div class="col-3 ">
           <div class="sidebar-content">
+            <!-- Search box -->
+            <div class="sidebar-item-search">
+              <div class="input-group" style="margin-top:20px; max-width: 500px">
+                <input type="text" class="form-control" placeholder="Search this community">
+                <div class="input-group-append">
+                  <button class="btn btn-secondary" type="button">
+                    <i class="fas fa-search fa-lg fa-fw"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
             <!-- News -->
             <ds-comcol-page-content [content]="communityPayload.sidebarText" [hasInnerHtml]="true" [title]="'community.page.news'">
-            </ds-comcol-page-content>
+            </ds-comcol-page-content>  
+            <!-- Browse by -->
+            <div class="sidebar-item">
+              <ds-comcol-page-browse-by [id]="communityPayload.id"></ds-comcol-page-browse-by>
+            </div>            
           </div>
         </div>
       </div>
