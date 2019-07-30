@@ -55,8 +55,9 @@
                   <img alt="Creative Commons License" style="border-width:0;" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"></a>&nbsp; All work in this collection is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a> <span class="license-abbreviation">(CC BY-NC-SA).</span>
               </div>
               <section class="collections-list data-s">
+                <h2 class="list-section-title">Subcommunities</h2>
                 <div class="fda-tree">
-                  <h2 class="section-title"><a href="#">Data Services</a></h2>
+                  <h3 class="section-title"><a href="#">Data Services</a></h3>
                   <div>Data Services provides consultation and instructional support for students, researchers, and instructors using quantitative, qualitative, survey design, and geospatial (GIS) software.</div>
                   <div class="resource_types">
                     <div class="resource_type resource_type_dataset badge badge-primary"><span class="resource_type_count">12</span> datasets</div>
@@ -84,7 +85,7 @@
                       </ul>
                     </li>
                   </ul>
-                  <h2 class="section-title"><a href="#">University Research Library</a></h2>
+                  <h3 class="section-title"><a href="#">University Research Library</a></h3>
                   <div>The research library documents radical and left history, with strengths in the histories of communism, socialism, anarchism, the New Left, the Civil Rights Movement, and utopian experiments.</div>
                   <div class="resource_types">
                     <div class="resource_type  badge badge-primary"><span class="resource_type_count">8</span> periodicals</div>
@@ -132,7 +133,7 @@
                       </ul>
                     </li>
                   </ul>
-                  <h2 class="section-title"><a href="#">Faculty Papers</a></h2>
+                  <h3 class="section-title"><a href="#">Faculty Papers</a></h3>
                   <div>Library faculty's item sets. </div>
                   <div class="resource_types">
                     <div class="resource_type  badge badge-primary"><span class="resource_type_count">2</span> theses</div>
@@ -197,11 +198,8 @@
                       </ul>
                     </li>
                   </ul>
-                  <h2 class="section-title"><a href="#">Bob Smith's Collection</a></h2>
-                  <div class="resource_types">
-                    <div class="resource_type  badge badge-primary"><span class="resource_type_count">0</span> public items</div>
-                  </div>
-                  <h2 class="section-title"><a href="#">Curated Collections</a></h2>
+            
+                  <h3 class="section-title"><a href="#">Curated Collections</a></h3>
                   <div>Curated by librarians and faculty within the Library</div>
                   <div class="resource_types">
                     <div class="resource_type  badge badge-primary"><span class="resource_type_count">8</span> periodicals</div>
@@ -259,6 +257,16 @@
                   </ul>
                 </div>
               </section>
+              <section class="collections-list data-s">
+                <h2 class="list-section-title">Collections</h3>
+                <div class="fda-tree">
+                  <h3 class="section-title"><a href="#">Graphics communication</a></h3>
+                  <div class="resource_types">
+                    <div class="resource_type  badge badge-primary"><span class="resource_type_count">0</span> public items</div>
+                  </div>
+                </div>
+              </section>
+        
             </div>
           </div>
           <div class="col-md-3">

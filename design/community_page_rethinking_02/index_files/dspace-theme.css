@@ -1815,7 +1815,7 @@ nav.navbar[_ngcontent-c7] {
 }
 
 .collections-list {
-  border-top: 1px solid #ced4da;
+  /* border-top: 1px solid #ced4da; */
   margin-top: 20px;
 }
 
@@ -1850,4 +1850,8 @@ nav.navbar[_ngcontent-c7] {
 .rights-info {
   font-size: .85rem;
   margin: 20px 0;
+}
+/* homepage */
+.list-section-title {
+  font-size: 1.5rem;
 }
