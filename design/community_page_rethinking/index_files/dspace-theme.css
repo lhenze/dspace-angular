@@ -1851,3 +1851,7 @@ nav.navbar[_ngcontent-c7] {
   font-size: .85rem;
   margin: 20px 0;
 }
+h1#page-title {
+  min-height: 50px;
+  font-size: 2rem;
+}

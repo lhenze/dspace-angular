@@ -794,7 +794,7 @@ input#query {
 
 /* line 10, ../../sass/partials/_tree.scss */
 .fda-tree {
-  max-width: 44rem;
+  /* max-width: 44rem; */
 }
 
 /* line 13, ../../sass/partials/_tree.scss */
@@ -1815,8 +1815,9 @@ nav.navbar[_ngcontent-c7] {
 }
 
 .collections-list {
-  /* border-top: 1px solid #ced4da; */
-  margin-top: 20px;
+  border-top: 1px solid #ced4da; 
+  margin-top: 25px;
+  padding-top: 25px;
 }
 
 .breadcrumb {
