@@ -36,3 +36,18 @@ $edit-item-metadata-field-width: 190px;
 $edit-item-language-field-width: 43px;
 
 $thumbnail-max-width: 175px;
+
+$text-muted: #757575;
+
+.community-page {
+  h1 {
+    min-height: 50px;
+    font-size: 2rem;
+  }
+
+  h2 {
+    margin: 1rem 0;
+    font-size: 1.5rem;
+  }
+
+}
