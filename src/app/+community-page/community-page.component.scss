@@ -1,0 +1,16 @@
+h1 {
+  min-height: 50px;
+  font-size: 2rem;
+}
+
+h2 {
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+.recent-submissions {
+  background-color: yellow;
+
+  .item {
+    margin: 1rem 0;
+  }
+}
