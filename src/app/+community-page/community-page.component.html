@@ -3,25 +3,25 @@
     <div *ngIf="communityRD?.payload; let communityPayload">
       <!-- Community name -->
       <ds-comcol-page-header [name]="communityPayload.name"></ds-comcol-page-header>
-      
       <div class="row">
         <div class="col-12 col-md-9">
-        
           <!-- Community logo -->
           <ds-comcol-page-logo *ngIf="logoRD$" [logo]="(logoRD$ | async)?.payload" [alternateText]="'Community Logo'">
           </ds-comcol-page-logo>
           <!-- Introductory text -->
           <ds-comcol-page-content [content]="communityPayload.introductoryText" [hasInnerHtml]="true">
           </ds-comcol-page-content>
-          
-          <!-- Handle URL -->
-          <div class="handle">
-          Permanent Handle URI: <a href="#">http://localhost:8080/dspace7/handle/123456789/147</a>
-          </div>
-          
-          <!-- Copyright -->
-          <ds-comcol-page-content [content]="communityPayload.copyrightText" [hasInnerHtml]="true">
+
+          <!-- News -->
+          <ds-comcol-page-content [content]="communityPayload.sidebarText" [hasInnerHtml]="true" [title]="'community.page.news'">
           </ds-comcol-page-content>
+
+          <!-- Browse By  -->
+          <div class="sidebar-item">
+            <ds-comcol-page-browse-by [id]="communityPayload.id"></ds-comcol-page-browse-by>
+          </div>
+
+
           <ds-community-page-sub-community-list [community]="communityPayload"></ds-community-page-sub-community-list>
           <ds-community-page-sub-collection-list [community]="communityPayload"></ds-community-page-sub-collection-list>
         </div>
@@ -38,16 +38,24 @@
                 </div>
               </div>
             </div>
-            <!-- News -->
-            <ds-comcol-page-content [content]="communityPayload.sidebarText" [hasInnerHtml]="true" [title]="'community.page.news'">
-            </ds-comcol-page-content>  
-            <!-- Browse by -->
-            <div class="sidebar-item">
-              <ds-comcol-page-browse-by [id]="communityPayload.id"></ds-comcol-page-browse-by>
-            </div>            
+
+
+            <div class="recent-submissions">
+              <h3>Recent Submissions</h3>
+              <article class="item"><a href="#">VLIR UOS CO2 compensation project (scientific support to Bos+)</a></article>
+              <article  class="item"><a href="#">BOF PhD Scholarship of Francis Mumbanza Mundondo</a></article>
+              <article class="item"><a href="#">CEBA LabEx CEBA scientific project DROUGHT</a></article>
+            </div>
           </div>
         </div>
       </div>
+      <hr>
+      <!-- Handle URL -->
+      <div class="handle"> Permanent Handle URI: <a href="#">http://localhost:8080/dspace7/handle/123456789/147</a>
+      </div>
+      <!-- Copyright -->
+      <ds-comcol-page-content [content]="communityPayload.copyrightText" [hasInnerHtml]="true">
+      </ds-comcol-page-content>
     </div>
   </div>
   <ds-error *ngIf="communityRD?.hasFailed" message="{{'error.community' | translate}}"></ds-error>
