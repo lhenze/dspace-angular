@@ -1,0 +1,38 @@
+
+/** Bootstrap Variables **/
+/* Colors */
+$gray-base: #000 ;
+
+$white:    #fff ;
+$gray-100: #f8f9fa ;
+$gray-200: #e9ecef ;
+$gray-300: #dee2e6 ;
+$gray-400: #ced4da ;
+$gray-500: #adb5bd ;
+$gray-600: #6c757d ;
+$gray-700: #00ff00 ;
+$gray-800: #343a40 ;
+$gray-900: #212529 ;
+$black:    #000 ;
+
+/* Reassign color vars to semantic color scheme */
+$blue:      #2B4E72 ;
+$green: #94BA65 ;
+$cyan: #2790B0 ;
+$yellow: #ec9433 ;
+$red: #CF4444 ;
+$dark: darken($blue, 17%) ;
+
+$theme-colors: (
+        primary: $cyan,
+        secondary: $gray-700,
+        success: $green,
+        info: $blue,
+        warning: $yellow,
+        danger: $red,
+        light: $gray-100,
+        dark: $dark
+) ;
+/* Fonts */
+$link-color: map-get($theme-colors, primary) ;
+
