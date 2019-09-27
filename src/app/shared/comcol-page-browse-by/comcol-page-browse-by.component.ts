@@ -28,5 +28,7 @@ export class ComcolPageBrowseByComponent implements OnInit {
   ngOnInit(): void {
     this.types = this.config.browseBy.types;
   }
-
+  onSelectChange(path:string) {
+    console.log('change ' + path);
+  }
 }
