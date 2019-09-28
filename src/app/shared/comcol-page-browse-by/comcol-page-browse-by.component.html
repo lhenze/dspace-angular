@@ -17,7 +17,7 @@
         [routerLink]="['/collections/' + id ]"
         routerLinkActive="active"
         #rla="routerLinkActive"
-        [attr.selected]="rla.isActive == true ? 'selected' : null "  >
+        [attr.selected]="rla.isActive === true ? 'selected' : null "  >
         {{'collection.page.browse.recent.head' | translate}}
       </option>
 
@@ -26,7 +26,7 @@
         [routerLink]="['/communities/' + id ]"
         routerLinkActive="active"
         #rla="routerLinkActive"
-        [attr.selected]="rla.isActive == true ? 'selected' : null "  >
+        [attr.selected]="rla.isActive === true ? 'selected' : null "  >
         {{'community.all-lists.head' | translate}}
       </option>
 
@@ -37,7 +37,7 @@
         [attr.data-params]="[id]"
         routerLinkActive="active"
         #rla="routerLinkActive"
-        [attr.selected]="rla.isActive == true ? 'selected' : null ">
+        [attr.selected]="rla.isActive === true ? 'selected' : null ">
         {{'browse.comcol.by.' + config.id | translate}}
       </option>
     </select>
