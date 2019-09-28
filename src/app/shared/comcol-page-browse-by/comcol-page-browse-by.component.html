@@ -9,11 +9,11 @@
       </div>
     </div>
     <div class="d-block d-sm-none">
-      Here is select j
+      Here is select mq
       <select name="browse-type" class="form-control" aria-label="Browse Community or Collection" (change)="onSelectChange($event.target.value)">
-        <option *ngIf="contentType=='collection'" [value]="['/collections/' + id ]" [routerLink]="['/collections/' + id ]"  routerLinkActive="active"  ng-selected="selected">{{'collection.page.browse.recent.head' | translate}}</option>
-        <option *ngIf="contentType=='community'" [value]="['/communities/' + id ]"  [routerLink]="['/communities/' + id ]" routerLinkActive="active"  ng-selected="selected">{{'community.all-lists.head' | translate}}</option>
-        <option *ngFor="let config of types" [value]="['/browse/' + config.id]" [routerLink]="['/browse/' + config.id]"  routerLinkActive="active" [queryParams]="{scope: id}" ng-selected="selected">{{'browse.comcol.by.' + config.id | translate}}</option>
+        <option *ngIf="contentType=='collection'" [value]="['/collections/' + id ]" [routerLink]="['/collections/' + id ]"  routerLinkActive="active" #rla="routerLinkActive" [attr.selected]="rla.isActive == true ? 'selected' : null "  >{{'collection.page.browse.recent.head' | translate}}</option>
+        <option *ngIf="contentType=='community'" [value]="['/communities/' + id ]"  [routerLink]="['/communities/' + id ]" routerLinkActive="active" [attr.selected]="isActive == true ? 'selected' : null "  >{{'community.all-lists.head' | translate}}</option>
+        <option *ngFor="let config of types" [value]="['/browse/' + config.id]" [routerLink]="['/browse/' + config.id]"  [queryParams]="{scope: id}" routerLinkActive="active" #rla="routerLinkActive" [attr.selected]="rla.isActive == true ? 'selected' : null ">{{'browse.comcol.by.' + config.id | translate}} also {{ id }}  </option>
       </select>
     </div>
 </nav>
