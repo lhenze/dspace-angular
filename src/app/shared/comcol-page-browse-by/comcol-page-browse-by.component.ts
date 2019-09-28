@@ -37,11 +37,13 @@ export class ComcolPageBrowseByComponent implements OnInit {
     const selectedOptionElement = target.options[optionIndex];
     const paramsAttribute = selectedOptionElement.getAttribute('data-params');
      /*  console.log('selectedOptionElement ' + JSON.stringify(selectedOptionElement));*/
-    console.log('queryParams ' + paramsAttribute);
+    console.log('paramsAttribute ' + paramsAttribute);
     /* this.router.navigate(['/home'], { queryParams: { scope: id } });*/
     if (paramsAttribute) {
+       /* console.log('Yes paramsAttribute ' + paramsAttribute);*/
       this.router.navigate([target.value], { queryParams: { scope: paramsAttribute } });
     } else {
+      /*  console.log('No paramsAttribute ');*/
       this.router.navigate([target.value]);
     }
   }
