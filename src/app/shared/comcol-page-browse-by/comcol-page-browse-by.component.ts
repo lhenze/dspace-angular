@@ -1,5 +1,6 @@
 import { Component, Inject, Input, OnInit } from '@angular/core';
 import { GLOBAL_CONFIG, GlobalConfig } from '../../../config';
+import { Router, ActivatedRoute, RouterModule } from '@angular/router';
 import { BrowseByTypeConfig } from '../../../config/browse-by-type-config.interface';
 
 /**
@@ -22,13 +23,26 @@ export class ComcolPageBrowseByComponent implements OnInit {
    */
   types: BrowseByTypeConfig[];
 
-  constructor(@Inject(GLOBAL_CONFIG) public config: GlobalConfig) {
+  constructor(@Inject(GLOBAL_CONFIG) public config: GlobalConfig, private router: Router) {
   }
 
   ngOnInit(): void {
     this.types = this.config.browseBy.types;
   }
-  onSelectChange(path:string) {
-    console.log('change ' + path);
+  onSelectChange(target, id) {
+    console.log('change value ' + target.value);
+    console.log('change id ' + id);
+    const optionIndex = target.selectedIndex;
+    /* console.log('change selectedIndex ' + optionIndex); */
+    const selectedOptionElement = target.options[optionIndex];
+    const paramsAttribute = selectedOptionElement.getAttribute('data-params');
+     /*  console.log('selectedOptionElement ' + JSON.stringify(selectedOptionElement));*/
+    console.log('queryParams ' + paramsAttribute);
+    /* this.router.navigate(['/home'], { queryParams: { scope: id } });*/
+    if (paramsAttribute) {
+      this.router.navigate([target.value], { queryParams: { scope: paramsAttribute } });
+    } else {
+      this.router.navigate([target.value]);
+    }
   }
 }
