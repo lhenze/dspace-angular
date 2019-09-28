@@ -10,7 +10,7 @@
   </div>
   <div class="d-block d-sm-none">
 
-    <select name="browse-type" class="form-control" aria-label="Browse Community or Collection" (change)="onSelectChange(($event.target), id )">
+    <select name="browse-type" class="form-control" aria-label="Browse Community or Collection" (change)="onSelectChange(($event.target))">
 
       <option *ngIf="contentType=='collection'"
         [value]="['/collections/' + id ]"

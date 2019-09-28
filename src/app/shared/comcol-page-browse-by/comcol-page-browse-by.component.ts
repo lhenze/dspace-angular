@@ -29,16 +29,11 @@ export class ComcolPageBrowseByComponent implements OnInit {
   ngOnInit(): void {
     this.types = this.config.browseBy.types;
   }
-  onSelectChange(target, id) {
-    console.log('change value ' + target.value);
-    console.log('change id ' + id);
+  onSelectChange(target) {
     const optionIndex = target.selectedIndex;
-    /* console.log('change selectedIndex ' + optionIndex); */
     const selectedOptionElement = target.options[optionIndex];
     const paramsAttribute = selectedOptionElement.getAttribute('data-params');
-     /*  console.log('selectedOptionElement ' + JSON.stringify(selectedOptionElement));*/
-    console.log('paramsAttribute ' + paramsAttribute);
-    /* this.router.navigate(['/home'], { queryParams: { scope: id } });*/
+    console.log('change value ' + target.value + ' paramsAttribute ' + paramsAttribute);
     if (paramsAttribute) {
        /* console.log('Yes paramsAttribute ' + paramsAttribute);*/
       this.router.navigate([target.value], { queryParams: { scope: paramsAttribute } });
